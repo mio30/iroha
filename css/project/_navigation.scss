@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+  background-image: url('../images/62602440_451046305708947_1811642382551089152_n.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/アセット-2.png');
+  }
+}
+
+.p-header__title-pc {
+  display: block;
+  letter-spacing: 3.3px;
+  font-size: 23px;
+  margin: 0 0 0 49px;
+  span {
+    font-size: 40px;
+  }
+  &::after {
+    letter-spacing: 3.0px;
+    content: "\A-Yakushima Lodge & Food Atelier-";
+    white-space: pre;
+    font-size: 15px;
+  }
+}
+.p-header__title-tab {
+  margin: 30px;
+}
+.p-header__title-sp {
+  margin: 15px;
+}
+.p-navigation__about {
+  padding-left: 20px;
+}
+.p-navigation__about::after {
+  content: "\A-いろはのこと-";
+}
+.p-navigation__lodge::after {
+  content: "\A-宿泊ロッジ-";
+}
+.p-navigation__food::after {
+  content: "\A-食工房/ラウンジ-";
+}
+.p-navigation__program::after {
+  content: "\A-体験プログラム-";
+}
+.p-navigation__booking::after {
+  content: "\A-ご予約-";
+}
