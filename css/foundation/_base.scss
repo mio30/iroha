@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: source-han-sans-cjk-ja,acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
