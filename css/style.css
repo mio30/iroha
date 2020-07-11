@@ -1,0 +1,202 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: source-han-sans-cjk-ja, acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.l-header {
+  width: 100%;
+  height: 20vh;
+}
+@media screen and (max-width: 767px) {
+  .l-header {
+    height: 62px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1179px) {
+  .l-header {
+    height: 55px;
+  }
+}
+
+.l-mainvisual {
+  height: 80vh;
+}
+@media screen and (max-width: 767px) {
+  .l-mainvisual__logo {
+    width: 80%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1179px) {
+  .l-mainvisual__logo {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.c-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.c-navigation {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  margin: 0;
+}
+.c-navigation__list {
+  list-style-type: none;
+  padding: 40px 23px;
+  text-align: center;
+  width: 20%;
+}
+.c-navigation__link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: calc(100vw / 70);
+  letter-spacing: 1.3px;
+}
+.c-navigation__link::after {
+  white-space: pre;
+  font-size: calc(100vw / 95);
+}
+.c-navigation__drawer {
+  position: relative;
+}
+.c-navigation__hamburger {
+  display: inline-block;
+  transform: translateX(-25px);
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+.c-navigation__hamburger span, .c-navigation__hamburger span:before, .c-navigation__hamburger span:after {
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #fff;
+  display: block;
+  content: "";
+  cursor: pointer;
+}
+.c-navigation__hamburger span:before {
+  bottom: -8px;
+}
+.c-navigation__hamburger span:after {
+  bottom: -16px;
+}
+@media screen and (min-width: 1180px) {
+  .c-navigation__hamburger {
+    display: none;
+  }
+}
+
+.c-mainvisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: url("../images/62602440_451046305708947_1811642382551089152_n.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url("../images/アセット-2.png");
+  }
+}
+
+.p-header__title-pc {
+  display: block;
+  letter-spacing: 3.3px;
+  font-size: 23px;
+  margin: 0 0 0 49px;
+}
+.p-header__title-pc span {
+  font-size: 40px;
+}
+.p-header__title-pc::after {
+  letter-spacing: 3px;
+  content: "\a-Yakushima Lodge & Food Atelier-";
+  white-space: pre;
+  font-size: 15px;
+}
+
+.p-header__title-tab {
+  margin: 30px;
+}
+
+.p-header__title-sp {
+  margin: 15px;
+}
+
+.p-navigation__about {
+  padding-left: 20px;
+}
+
+.p-navigation__about::after {
+  content: "\a-いろはのこと-";
+}
+
+.p-navigation__lodge::after {
+  content: "\a-宿泊ロッジ-";
+}
+
+.p-navigation__food::after {
+  content: "\a-食工房/ラウンジ-";
+}
+
+.p-navigation__program::after {
+  content: "\a-体験プログラム-";
+}
+
+.p-navigation__booking::after {
+  content: "\a-ご予約-";
+}
+
+@media screen and (max-width: 1179px) {
+  .u-hidden__tab-sp {
+    display: none;
+  }
+}
+
+.u-hidden__pc-sp {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1179px) {
+  .u-hidden__pc-sp {
+    display: block;
+  }
+}
+
+.u-hidden__pc-tab {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .u-hidden__pc-tab {
+    display: block;
+  }
+}
+
+.u-navigation__hidden {
+  display: none;
+}
